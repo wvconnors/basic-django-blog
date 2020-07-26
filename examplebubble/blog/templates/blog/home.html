@@ -1,0 +1,8 @@
+{% extends "blog/base.html" %}
+{% block content %} 
+ <h1> Hi everybody, welcome blog home! </h1>
+  {% for pid in people %}
+  	<h1>{{ pid.name }} </h1>
+	<p>This person joined on {{pid.born}} and is currently {{pid.status}} </p>
+  {% endfor %}
+{% endblock %}
